@@ -432,24 +432,6 @@ header.scrolled #main-nav ul li a:hover {
 }
 
 
-@media (max-width: 631px) {
-    .features-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
-    }
-
-    .feature-item {
-        margin: 5px 10px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .features-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-
 .feature-item {
     display: flex;
     flex-direction: column;
@@ -504,6 +486,23 @@ header.scrolled #main-nav ul li a:hover {
         font-size: var(--xl-font-size);
     }
     
+}
+
+@media (max-width: 631px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .feature-item {
+        margin: 5px 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 
