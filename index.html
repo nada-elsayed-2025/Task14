@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم-الندى</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="loading-spinner"></div>
+            <p class="loading-text">جاري التحميل</p>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="container">
+
+            <button class="reserve-btn btn" href="#contact">احجز الآن</button>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                    <li><a href="#offers">العروض</a></li>
+                    <li><a href="#menu">القائمة</a></li>
+                    <li><a href="#hero">الرئيسية</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="logo">
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <video class="video-background" autoplay muted loop>
+            <source src="assets/img/small-vecteezy_chinese-food-with-dipping-sauce-on-a-plate_51585318_small.mp4"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container">
+            <div class="hero-content">
+                <h1>مطعم الندى</h1>
+                <p>أفضل المأكولات والمشروبات في مكان واحد<br> استمتع بتجربة فريدة من نوعها</p>
+                <a href="#menu" class="btn">عرض القائمة</a>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us" id="why-choose-us">
+        <div class="container">
+            <h2 class="animated-title">لماذا نحن أفضل؟</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>مكونات طازجة</h3>
+                    <p>نستخدم أجود المكونات المحلية والعضوية لضمان أفضل مذاق.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>وصفات خاصة</h3>
+                    <p>أطباقنا محضرة بوصفاتنا السرية التي تناقلتها الأجيال.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-heart"></i>
+                    <h3>أجواء عائلية</h3>
+                    <p>استمتع بتجربة طعام مريحة ومرحبة تناسب جميع أفراد العائلة.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-award"></i>
+                    <h3>خدمة ممتازة</h3>
+                    <p>فريق عمل مدرب ومستعد لتقديم أفضل خدمة لضمان راحتك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2>قائمتنا اللذيذة</h2>
+            <div class="filter-buttons">
+                <button class="btn" data-category="desserts">حلويات</button>
+                <button class="btn" data-category="drinks">مشروبات</button>
+                <button class="btn" data-category="main">أطباق رئيسية</button>
+                <button class="btn active" data-category="all">الكل</button>
+            </div>
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu Items will be dynamically loaded/filtered here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers-section" id="offers">
+        <div class="container">
+            <h2>عروضنا الخاصة</h2>
+            <div class="offers-slider-wrapper">
+                <div class="offers-slides-container" id="offersSlidesContainer">
+                    <!-- Offer Slide 1 -->
+                    <div class="offer-slide-card">
+                        <div class="offer-image-box">
+                            <img src="assets/img/s1.jpeg" alt="Special Offer 1">
+                        </div>
+                        <div class="offer-details-countdown">
+                            <h3>خصم 20% على كل الفواتير!</h3>
+                            <p>استمتع بخصم كبير على عشاءك التالي.</p>
+                            <div class="offers-countdown-display" id="offerCountdown1">
+                                <div class="countdown-item"><span id="hours-offer-1">00</span><span>ساعة</span></div>
+                                <div class="countdown-item"><span id="minutes-offer-1">00</span><span>دقيقة</span></div>
+                                <div class="countdown-item"><span id="seconds-offer-1">00</span><span>ثانية</span></div>
+                            </div>
+                            <a href="#menu" class="btn">اطلب الآن</a>
+                        </div>
+                    </div>
+
+                    <!-- Offer Slide 2 -->
+                    <div class="offer-slide-card">
+                        <div class="offer-image-box">
+                            <img src="assets/img/s2.jpeg" alt="Special Offer 2">
+                        </div>
+                        <div class="offer-details-countdown">
+                            <h3>اشترِ طبق رئيسي، واحصل على طبق مقبلات مجاني!</h3>
+                            <p>عرض مثالي لمشاركة الأصدقاء والعائلة.</p>
+                            <div class="offers-countdown-display" id="offerCountdown2">
+                                <div class="countdown-item"><span id="hours-offer-2">00</span><span>ساعة</span></div>
+                                <div class="countdown-item"><span id="minutes-offer-2">00</span><span>دقيقة</span></div>
+                                <div class="countdown-item"><span id="seconds-offer-2">00</span><span>ثانية</span></div>
+                            </div>
+                            <a href="#menu" class="btn">استفد من العرض</a>
+                        </div>
+                    </div>
+
+                    <!-- Offer Slide 3 -->
+                    <div class="offer-slide-card">
+                        <div class="offer-image-box">
+                            <img src="assets/img/s3.jpeg" alt="Special Offer 3">
+                        </div>
+                        <div class="offer-details-countdown">
+                            <h3>قهوة مجانية مع أي حلوى!</h3>
+                            <p>اختتم وجبتك بقهوة منعشة مجانًا.</p>
+                            <div class="offers-countdown-display" id="offerCountdown3">
+                                <div class="countdown-item"><span id="hours-offer-3">00</span><span>ساعة</span></div>
+                                <div class="countdown-item"><span id="minutes-offer-3">00</span><span>دقيقة</span></div>
+                                <div class="countdown-item"><span id="seconds-offer-3">00</span><span>ثانية</span></div>
+                            </div>
+                            <a href="#menu" class="btn">تصفح الحلويات</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Offers Slider Navigation Arrows -->
+                <button class="offers-slider-button offers-prev-button" id="offersPrevSlide">&#10094;</button>
+                <button class="offers-slider-button offers-next-button" id="offersNextSlide">&#10095;</button>
+
+                <!-- Offers Pagination Dots -->
+                <div class="offers-pagination-dots" id="offersPaginationDots">
+                    <span class="offers-dot active" data-slide="0"></span>
+                    <span class="offers-dot" data-slide="1"></span>
+                    <span class="offers-dot" data-slide="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h2>ماذا يقول عملاؤنا؟</h2>
+            <div class="testimonials-slider-container">
+                <div class="testimonial-slides" id="testimonialSlides">
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-item">
+                        <img src="assets/img/f2.jpeg" alt="Client 4">
+                        <p>"أحسن مطعم جربته على مدار تجاربى للمطاعم"</p>
+                        <h4>يوسف السيد -</h4>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-item">
+                        <img src="assets/img/f1.jpeg" alt="Client 3">
+                        <p>".الأسعار معقولة جداً مقارنة بالجودة العالية. سأعود قريباً"</p>
+                        <h4> ندى جاسم -</h4>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-item">
+                        <img src="assets/img/f4.jpeg" alt="Client 2">
+                        <p>"أحببت الأجواء الهادئة والأطباق الفريدة. تجربة لا تُنسى بالتأكيد!"</p>
+                        <h4>فاطمة علي -</h4>
+                    </div>
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-item">
+                        <img src="assets/img/f3.jpeg" alt="Client 1">
+                        <p>"أفضل مطعم زرته على الإطلاق! الطعام لذيذ والخدمة رائعة. أنصح به بشدة."</p>
+                        <h4>أحمد سالم -</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact & Reservation -->
+    <section class="contact-reservation-section" id="contact">
+        <div class="container">
+            <h2>تواصل معنا واحجز طاولتك</h2>
+            <div class="reservation-content">
+                <form class="reservation-form">
+                    <label for="name">الاسم:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="phone">رقم الهاتف:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="date">التاريخ:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">الوقت:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="guests">عدد الأشخاص:</label>
+                    <select id="guests" name="guests" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6+">6+</option>
+                    </select>
+                    <button type="submit" class="btn">احجز الآن</button>
+                </form>
+                <div class="google-map">
+                    <!-- Replace with your actual Google Maps embed code -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.6409747514197!2d31.22915641490989!3d30.04441958188047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840d04b8d7a1b%3A0x7e8b8c8d8b8c8d8b!2sCairo%2C%20Egypt!5e0!3m2!1sen!2sus!4v1678901234567!5m2!1sen!2sus"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#menu">القائمة</a></li>
+                    <li><a href="#offers">العروض</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </div>
+            <div class="copyright-text">
+                <p>&copy; 2025 مطعم الندى. جميع الحقوق محفوظة.</p>
+            </div>
+            <div class="social-icons">
+                <h3>تابعنا</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
