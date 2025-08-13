@@ -43,7 +43,7 @@ featureItems.forEach(item => observer.observe(item));
 
 // Menu Items Data
 const menuItemsData = [
-    { name: "أصابع الجلاش المقرمشة", price: "45 Egp", category: "main", image: "../img/t1.jpeg", description: "أصابع الجلاش المقرمشة مع صوص الكاتشب الحار." },
+    { name: "أصابع الجلاش المقرمشة", price: "45 Egp", category: "main", image: "../assets/img/t1.jpeg", description: "أصابع الجلاش المقرمشة مع صوص الكاتشب الحار." },
     { name: "تاكوس الدجاع", price: "55 Egp", category: "main", image: "../assets/img/t2.jpeg", description: "لحم أنجوس فاخر مع صلصة خاصة وجبن ذائب." },
     { name: "هوت دوج", price: "60 Egp", category: "main", image: "../assets/img/t3.jpeg", description: "هوت دوج الموتزريلا والبطاطس مع صوص الخردل الحار." },
     { name: "البانية المقرمش", price: "80 Egp", category: "main", image: "../assets/img/t4.jpeg", description: "بانية الدجاج الطازج والمتبل بتتبيلة رائعة." },
