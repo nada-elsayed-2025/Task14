@@ -432,9 +432,14 @@ header.scrolled #main-nav ul li a:hover {
 }
 
 
-@media (min-width: 631px) {
+@media (max-width: 631px) {
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .feature-item {
+        margin: 5px 10px;
     }
 }
 
