@@ -43,11 +43,11 @@ featureItems.forEach(item => observer.observe(item));
 
 // Menu Items Data
 const menuItemsData = [
-    { name: "أصابع الجلاش المقرمشة", price: "45 Egp", category: "main", image: "../assets/img/t1.jpeg", description: "تشكيلة فاخرة من الفطور العربي والعالمي." },
+    { name: "أصابع الجلاش المقرمشة", price: "45 Egp", category: "main", image: "../assets/img/t1.jpeg", description: "أصابع الجلاش المقرمشة مع صوص الكاتشب الحار." },
     { name: "تاكوس الدجاع", price: "55 Egp", category: "main", image: "../assets/img/t2.jpeg", description: "لحم أنجوس فاخر مع صلصة خاصة وجبن ذائب." },
-    { name: "هوت دوج", price: "60 Egp", category: "main", image: "../assets/img/t3.jpeg", description: "معكرونة طازجة بصلصة ألفريدو الغنية والدجاج." },
-    { name: "البانية المقرمش", price: "80 Egp", category: "main", image: "../assets/img/t4.jpeg", description: "سلمون طازج مشوي مع خضروات موسمية." },
-    { name: "فاهيتا الدجاج", price: "80 Egp", category: "main", image: "../assets/img/t5.jpeg", description: "سلمون طازج مشوي مع خضروات موسمية." },
+    { name: "هوت دوج", price: "60 Egp", category: "main", image: "../assets/img/t3.jpeg", description: "هوت دوج الموتزريلا والبطاطس مع صوص الخردل الحار." },
+    { name: "البانية المقرمش", price: "80 Egp", category: "main", image: "../assets/img/t4.jpeg", description: "بانية الدجاج الطازج والمتبل بتتبيلة رائعة." },
+    { name: "فاهيتا الدجاج", price: "80 Egp", category: "main", image: "../assets/img/t5.jpeg", description: "سندويشات فاهيتا الدجاج مع خلطة الخضار المشوية." },
     { name: "اونيون رينج", price: "80 Egp", category: "main", image: "../assets/img/t6.jpeg", description: "دوائر البصل المقرمشة مع صوص الكاتشب اللذيذ ." },
     { name: "عصير نعنان طازج", price: "15 Egp", category: "drinks", image: "../assets/img/j1.jpeg", description: "عصير النعناع طبيعي 100% منعش." },
     { name: "موهيتو توت", price: "20 Egp", category: "drinks", image: "../assets/img/j2.jpeg", description: "مزيج منعش من التوت والنعناع والليمون." },
